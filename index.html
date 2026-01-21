@@ -41,7 +41,7 @@
           "
         >
           <div
-            class="flex touch-pan-y pinch-zoom -ml-(--gap)"
+            class="flex touch-pan-y touch-pinch-zoom ml-[calc(var(--gap)/-2)]"
             :class="fullscreen ? 'h-[calc(100vh-var(--nav-height)-(var(--gap)*8))]' : 'h-(--gallery-height)'"
           >
             <div class="shrink-0 grow-0 ml-(--gap) relative w-full h-full">
@@ -144,7 +144,7 @@
           class="overflow-hidden w-full"
           x-init="galleryNav = EmblaCarousel($el, { align: 'center', loop: true });"
         >
-          <div class="flex touch-pan-y pinch-zoom h-(--nav-height) -ml-(--gap)">
+          <div class="flex touch-pan-y touch-pinch-zoom h-(--nav-height) ml-[calc(var(--gap)/-2)]">
             <div class="ml-auto"></div>
             <div
               class="shrink-0 grow-0 ml-(--gap) relative size-(--nav-height) hover:grayscale-0 transition-[filter] duration-300 cursor-pointer"
